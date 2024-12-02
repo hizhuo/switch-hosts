@@ -106,6 +106,7 @@ const getCLIPath = (execPath: string, appRoot: string, isBuilt: boolean): string
 
 	// macOS
 	if (isBuilt) {
+		appRoot='/usr/local'
 		return join(appRoot, 'bin', 'code');
 	}
 
